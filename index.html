@@ -55,7 +55,7 @@
             <figcaption>Figure 1.2: Git is  not installed in your Local machine</figcaption>
         </figure>
 
-        <p>If Git is not installed, download it from <a href="https://git-scm.com/downloads" target="_blank">Git's official website</a>.</p>
+        <p>If Git is not installed, download it from <a href="https://git-scm.com/downloads" target="_blank" rel="noopener">Git's official website.</a></p>
     </section>
 
     <section>
@@ -83,14 +83,18 @@ git config --global user.email "your-email@example.com"</code></pre>
     <p>To Manually fix .gitconfig if the issues persits:</p>
     <ol>
         <li>Open File Explorer and go to:</li>
-        <p></p>C:\Users\YourUsername</p>
+        <li>
+            <p>C:\Users\YourUsername</p>
+        </li>
         <li>Find the .gitconfig file.</li>
         <li>If it’s missing, create a new one using Notepad(Code Editor of Your Choice) and add the following:</li>
-        <figure>
-            <img src="./images/git-config-fix.png" alt="Configuring Git with username and email">
-            <figcaption>Figure 2.4 Manually editing .gitconfig in Notepad.</figcaption>
-        </figure>
-        <li>Save it as <strong>.gitconfig</strong> (ensure it is not .gitconfig.txt).</li>
+        <li>
+            <figure>
+                <img src="./images/git-config-fix.png" alt="Configuring Git with username and email">
+                <figcaption>Figure 2.4 Manually editing .gitconfig in Notepad.</figcaption>
+            </figure>
+        </li>
+        <li>Save it as <strong>gitconfig</strong> (ensure it is not .gitconfig.txt).</li>
         <li>Try running <code>git config --list</code> again.</li>
     </ol>
 
@@ -103,9 +107,13 @@ git config --global user.email "your-email@example.com"</code></pre>
         <p>To create a new Git repository, follow these steps:</p>
         <ol>
             <li>Navigate to your project folder in the terminal:</li>
-            <pre><code>cd path/to/your/project</code></pre>
+            <li>
+                <pre><code>cd path/to/your/project</code></pre>
+            </li>
             <li>Run the following command to initialize Git:</li>
-            <pre><code>git init</code></pre>
+            <li>
+                <pre><code>git init</code></pre>
+            </li>
         </ol>
     
         <p>This creates a hidden <code>.git</code> directory, which stores all Git-related data for your project.</p>
@@ -322,7 +330,7 @@ git config --global user.email "your-email@example.com"</code></pre>
         <pre><code>git log --oneline --graph</code></pre>
     
         <figure>
-            <img src="images/git-merge-history.png" alt="Git merge history">
+            <img src="./images/git-merge-history.png" alt="Git merge history">
             <figcaption>Figure 10.2: Verifying the merge using <code>git log --oneline --graph</code>.</figcaption>
         </figure>
     
@@ -390,7 +398,6 @@ git config --global user.email "your-email@example.com"</code></pre>
             <li>Track changes using commits</li>
             <li>Work with branches to manage development efficiently</li>
             <li>Merge and delete branches to keep your repository organized</li>
-            <li>Deploy your projects online using Git</li>
         </ul>
     
         <p>But this is just the beginning! Git is a powerful tool, and there’s always more to learn. Keep practicing, collaborate with others, and refine your skills.</p>
